@@ -1,0 +1,35 @@
+---
+- file: path=/root/{{ item.path }}
+        owner="{{ owner }}"
+        group="{{ group }}"
+        state=directory
+        mode=0755
+  with_items:
+    - { path: 'sequential_read/1k' }
+    - { path: 'sequential_read/10k' }
+    - { path: 'sequential_read/100k' }
+    - { path: 'sequential_read/1m' }
+    - { path: 'sequential_read/10m' }
+    - { path: 'sequential_read/100m' }
+    - { path: 'sequential_read/1g' }
+    - { path: 'sequential_write/1k' }
+    - { path: 'sequential_write/10k' }
+    - { path: 'sequential_write/100k' }
+    - { path: 'sequential_write/1m' }
+    - { path: 'sequential_write/10m' }
+    - { path: 'sequential_write/100m' }
+    - { path: 'sequential_write/1g' }
+    - { path: 'random_read/1k' }
+    - { path: 'random_read/10k' }
+    - { path: 'random_read/100k' }
+    - { path: 'random_read/1m' }
+    - { path: 'random_read/10m' }
+    - { path: 'random_read/100m' }
+    - { path: 'random_read/1g' }
+    - { path: 'random_write/1k' }
+    - { path: 'random_write/10k' }
+    - { path: 'random_write/100k' }
+    - { path: 'random_write/1m' }
+    - { path: 'random_write/10m' }
+    - { path: 'random_write/100m' }
+    - { path: 'random_write/1g' }

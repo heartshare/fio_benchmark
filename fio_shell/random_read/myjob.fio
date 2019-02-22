@@ -1,0 +1,7 @@
+[Random-Read]
+rw=randread
+direct=1
+directory=/mnt/purestorage1/
+bs=1k
+size=1g
+ioengine=libaio

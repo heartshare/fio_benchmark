@@ -1,0 +1,11 @@
+---
+- file: path=/root/{{ item.path }}
+        owner="{{ owner }}"
+        group="{{ group }}"
+        state=directory
+        mode=0755
+  with_items:
+    - { path: 'sequential_read' }
+    - { path: 'sequential_write' }
+    - { path: 'random_read' }
+    - { path: 'random_write' }

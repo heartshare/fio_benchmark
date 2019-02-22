@@ -1,0 +1,5 @@
+---
+- name: Install fio
+  yum:
+    name: fio
+    state: latest

@@ -1,0 +1,5 @@
+---
+- name: fio benchmark
+  user: root
+  roles:
+    - benchmark
