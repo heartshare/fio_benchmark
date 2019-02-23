@@ -1,5 +1,6 @@
 ---
 - name: fio benchmark
+  hosts: host
   user: root
   roles:
     - benchmark

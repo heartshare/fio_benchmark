@@ -1,5 +1,8 @@
 ---
-- file: path=/root/{{ item.path }}
+- name: Make Directory
+  file: path=/root/{{ item.path }}
+        state=absent
+  file: path=/root/{{ item.path }}
         owner="{{ owner }}"
         group="{{ group }}"
         state=directory

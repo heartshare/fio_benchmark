@@ -1,5 +1,6 @@
 ---
-- file: path=/root/{{ item.path }}
+- name: Make Sub Directory
+  file: path=/root/{{ item.path }}
         owner="{{ owner }}"
         group="{{ group }}"
         state=directory

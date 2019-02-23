@@ -1,16 +1,12 @@
 ---
 - name: Sequential Read excute
-  shell: ./sequential_read/benchmark.sh
-    chdir: fio_shell/
+  script: ../../../../fio_shell/sequential_read/benchmark.sh
 
 - name: Sequential Write excute
-  shell: ./sequential_write/benchmark.sh
-    chdir: fio_shell/
+  script: ../../../../fio_shell/sequential_write/benchmark.sh
 
 - name: Random Read excute
-  shell: ./random_read/benchmark.sh
-    chdir: fio_shell/
+  script: ../../../../fio_shell/random_read/benchmark.sh
 
 - name: Random Write excute
-  shell: ./random_write/benchmark.sh
-    chdir: fio_shell/
+  script: ../../../../fio_shell/random_write/benchmark.sh

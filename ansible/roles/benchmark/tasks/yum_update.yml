@@ -1,5 +1,5 @@
 ---
 - name: Update yum
   yum:
-    name: *
+    name: '*'
     state: latest
