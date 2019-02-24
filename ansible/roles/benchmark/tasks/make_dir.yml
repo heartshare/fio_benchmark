@@ -1,12 +1,13 @@
 ---
 - name: Make Directory
-  file: path=/root/{{ item.path }}
-        state=absent
-  file: path=/root/{{ item.path }}
-        owner="{{ owner }}"
-        group="{{ group }}"
-        state=directory
-        mode=0755
+  file:
+    path: /root/{{ item.path }}
+    state: absent
+  file:
+    path: /root/{{ item.path }}
+    owner: "{{ owner }}"
+    group: "{{ group }}"
+    state: directory
   with_items:
     - { path: 'sequential_read' }
     - { path: 'sequential_write' }

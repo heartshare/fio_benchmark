@@ -4,3 +4,4 @@
 - include: make_dir.yml
 - include: make_subdir.yml
 - include: start_bench.yml
+- include: make_report.yml

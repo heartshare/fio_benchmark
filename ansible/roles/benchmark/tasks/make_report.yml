@@ -1,0 +1,8 @@
+---
+- name: Make Report
+  file:
+  path: /root/result.txt
+  state: absent
+  script: ../../../../report.pl
+  args:
+   executable: perl
