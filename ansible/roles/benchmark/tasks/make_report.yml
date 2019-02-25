@@ -1,8 +1,10 @@
 ---
 - name: Make Report
   file:
-  path: /root/result.txt
-  state: absent
+    path: /root/result.txt
+    state: absent
+
+- name: Execute 
   script: ../../../../report.pl
   args:
    executable: perl

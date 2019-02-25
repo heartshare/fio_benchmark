@@ -1,6 +1,7 @@
 ---
 - include: yum_update.yml
 - include: fio_install.yml
+- include: copy_shell.yml
 - include: make_dir.yml
 - include: make_subdir.yml
 - include: start_bench.yml

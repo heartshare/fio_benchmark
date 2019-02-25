@@ -1,8 +1,15 @@
 ---
-- name: Make Directory
+- name: Delete Directory
   file:
     path: /root/{{ item.path }}
     state: absent
+  with_items:
+    - { path: 'sequential_read' }
+    - { path: 'sequential_write' }
+    - { path: 'random_read' }
+    - { path: 'random_write' }
+
+- name: Make Directory
   file:
     path: /root/{{ item.path }}
     owner: "{{ owner }}"

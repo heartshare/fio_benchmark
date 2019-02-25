@@ -1,0 +1,6 @@
+---
+- name: Copy fio shell
+  copy:
+    src: "../fio_shell"
+    dest: "{{ remote_dir }}"
+    directory_mode: yes
